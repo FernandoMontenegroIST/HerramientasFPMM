@@ -1,12 +1,16 @@
-const http = require('http');
+// Importar express
+const express = require('express');
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hola mundo\n');
+// Crear la app de express
+const app = express();
+
+// Definir una ruta
+app.get('/', (req, res) => {
+  res.send('Hola Mundo');
 });
 
+// Escuchar en un puerto
 const PORT = 3000;
-
-server.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
