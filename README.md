@@ -5,4 +5,5 @@
 - Realizado la instalacion de nodejs y git
 - Instalacion de express en el proyecto
 - Creacion del servidor en express
+- Cracion del proyecto libros usando un array y usando post
 
