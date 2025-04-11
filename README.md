@@ -1,6 +1,8 @@
 # HerramientasFPMM
 
-## Tares a hacer de la materia de Herramientas de Desarollo de Software
+## Tarea Práctica de la materia de Herramientas de Desarollo de Software
 
-- [ ] Generar el manual de instalacion de git 
-- [ ] Generar el manual de instalacion de node 
+- Realizado la instalacion de nodejs y git
+- Instalacion de express en el proyecto
+- Creacion del servidor en express
+
