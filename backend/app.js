@@ -6,6 +6,7 @@ const PORT = 3000;
 
 // Middleware para parsear JSON en el cuerpo de las solicitudes
 app.use(express.json());
+app.use(express.json());
 
 app.get('/api/usuarios', (req, res) => {
   const sql = 'SELECT * FROM usuarios';
