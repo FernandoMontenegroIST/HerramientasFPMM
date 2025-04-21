@@ -1,11 +1,13 @@
 const express = require('express');
 const connection = require('./db');
+const cors = require('cors');
+
 
 const app = express();
 const PORT = 3000;
 
-// Middleware para parsear JSON en el cuerpo de las solicitudes
-app.use(express.json());
+app.use(cors())
+
 app.use(express.json());
 
 app.get('/api/usuarios', (req, res) => {
@@ -55,6 +57,10 @@ app.post('/api/usuarios', (req, res) => {
     }
     res.status(201).json({ mensaje: 'Usuario creado exitosamente', id: result.insertId });
   });
+});
+
+app.get('/ping', (req, res) => {
+    res.json({data: 'Pong'});
 });
 
 app.listen(PORT, () => {

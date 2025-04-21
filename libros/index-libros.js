@@ -12,6 +12,13 @@ const libros = [
   {lib_id: 3, lib_titulo: "Monster", lib_autor: "Naoki Urasawa"}
 ]
 
+app.post('/agregar_libros', (req, res) => {
+  const { lib_id, lib_titulo, lib_autor } = req.body;
+  const libro = { lib_id, lib_titulo, lib_autor };
+  libros.push(libro);
+  res.status(201).json(libros);
+});
+
 app.post('/libros', (req, res) => {
   const { lib_id_post } = req.body;
 
@@ -23,6 +30,8 @@ app.post('/libros', (req, res) => {
     res.status(404).json({ error: 'Libro no encontrado' });
   }
 });
+
+
 
 
 app.get('/libros', (req, res) => {
