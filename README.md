@@ -18,12 +18,13 @@ Este proyecto forma parte de la materia **Herramientas de Desarrollo de Software
 
 ## Tecnologías utilizadas
 
-- **Backend:** Node.js, Express, CORS
+- **Backend:** Node.js, Express
 - **Frontend:** Vite, HTML/CSS/JavaScript
 
 ## Autor
 
 - **Nombre:** Fernando Paúl Montenegro Mora
+- **Curso:** 5° "A"
 
 
 
