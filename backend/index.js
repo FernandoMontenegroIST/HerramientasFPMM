@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json());
 
 app.get('/ping', (req, res) => {
-    res.json({data: 'Pong'});
+    res.json({data: 'Pong Montenegro'});
 });
 
 app.listen(PORT, () => {

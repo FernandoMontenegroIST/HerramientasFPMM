@@ -12,9 +12,9 @@ document.querySelector('#btn_ping').addEventListener('click', async () => {
   try {
     const response = await fetch('http://localhost:3000/ping')
     const result = await response.json()
-    document.querySelector('#mensaje').innerText = 'Mensaje: ' + result.data
+    document.querySelector('#mensaje').innerHTML = '<b>Mensaje: </b>' + result.data
   } catch (error) {
-    document.querySelector('#mensaje').innerText = 'Mensaje: Error al conectar'
+    document.querySelector('#mensaje').innerHTML = '<b>Mensaje: Error al acceder en este momento.</b>'
     console.error('Error:', error)
   }
 })
