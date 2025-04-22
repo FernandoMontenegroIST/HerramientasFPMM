@@ -2,9 +2,7 @@
 
 ## Tarea Práctica - Herramientas de Desarrollo de Software
 
-Este proyecto forma parte de la materia **Herramientas de Desarrollo de Software** y tiene como objetivo construir una aplicación básica utilizando tecnologías modernas del ecosistema JavaScript, tanto en el frontend como en el backend.
-
----
+Este proyecto forma parte de la materia **Herramientas de Desarrollo de Software** y tiene como objetivo construir una aplicación básica utilizando tecnologías del ecosistema JavaScript, tanto en el frontend como en el backend.
 
 ## Funcionalidades implementadas
 
@@ -18,14 +16,10 @@ Este proyecto forma parte de la materia **Herramientas de Desarrollo de Software
 - Integración de **CORS** en el backend para permitir la conexión con el frontend.
 - Conexión exitosa entre frontend y backend.
 
----
-
 ## Tecnologías utilizadas
 
 - **Backend:** Node.js, Express, CORS
 - **Frontend:** Vite, HTML/CSS/JavaScript
-
----
 
 ## Autor
 
