@@ -10,7 +10,11 @@ app.use(cors())
 app.use(express.json());
 
 app.get('/ping', (req, res) => {
-    res.json({data: '🏓Pong - FPMM'});
+    res.json({data: 'Pong - FPMM'});
+});
+
+app.get('/examen', (req, res) => {
+  res.json({data: 'Hola Mundo!'});
 });
 
 app.listen(PORT, () => {
