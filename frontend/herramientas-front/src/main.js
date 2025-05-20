@@ -10,7 +10,7 @@ document.querySelector('#app').innerHTML = `
 
 document.querySelector('#btn_ping').addEventListener('click', async () => {
   try {
-    const response = await fetch('http://localhost:3000/ping')
+    const response = await fetch('http://13.217.37.120:3000/ping')
     const result = await response.json()
     document.querySelector('#mensaje').innerHTML = '<b>Mensaje: </b>' + result.data
   } catch (error) {
