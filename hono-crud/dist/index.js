@@ -15,10 +15,8 @@ app.get('/estadisticas', async (c) => {
       GROUP BY idioma
     `);
 
-    // Convierte el total de BigInt a Number
     const total = Number(totalResults[0].total);
 
-    // Convierte cada cantidad BigInt a Number
     const porIdioma = porIdiomaResults.map(row => ({
       idioma: row.idioma,
       cantidad: Number(row.cantidad)
