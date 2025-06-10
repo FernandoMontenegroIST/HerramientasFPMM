@@ -6,7 +6,7 @@ app.get('/saludos', async (c) => {
     const rows = await pool.query('SELECT * FROM saludos');
     return c.json(rows);
 });
-app.get('/estadisticas', async (c) => {
+app.get('/saludos/estadisticas', async (c) => {
   try {
     const totalResults = await pool.query('SELECT COUNT(*) AS total FROM saludos');
     const porIdiomaResults = await pool.query(`
